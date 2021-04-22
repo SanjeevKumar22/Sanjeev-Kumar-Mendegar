@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 2px solid red; */
+}
+html {
+  scroll-behavior: smooth;
+}
+.navbar {
+  /* border: 2px solid red; */
+  position: sticky;
+  top: 0;
+  cursor: pointer;
+  /* background-color:black ; */
+
+}
+.nav-list {
+
+  width: 70%;
+  display: flex;
+  flex-direction:row;
+}
+.nav-list li {
+  list-style: none;
+
+  padding: 26px 30px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  font-size: 20px;
+  /* color: rgb(81, 255, 0); */
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 25px 5px;
+}
+
+.logo {
+  margin: auto 0;
+  align-items: center;
+  justify-content: center;
+  font-size: 180%;
+  color: orange;
+}
+.logo1 {
+  margin: auto 0;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  /* color: rgb(255, 0, 0); */
+  color: chartreuse;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  /* color: black; */
+}
+.nav-list li a:hover {
+  /* color: blue; */
+  color: grey;
+}
+.background {
+  background: rgba(0, 0, 0, 0.7) url("img/bg.jpg");
+  background-size: cover;
+  background-blend-mode: darken;
+  
+}
+.firstsection {
+  height: 100vh;
+}
+.box-main {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  color: white;
+  max-width: 50%;
+  margin: auto;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+}
+.firsthalf {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.secondhalf {
+  width: 30%;
+}
+.secondhalf img {
+  width: 140%;
+  /* border: 4px solid white; */
+  border-radius: 150px;
+  display: block;
+  margin: auto;
+}
+.text-big {
+  font-size: 60px;
+
+}
+.text-small {
+  font-size: 20px;
+  padding-top: 10px;
+}
+.section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    margin: auto;
+    max-width: 80%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 15px;
+    /* border: 2px solid red; */
+
+}
+.paras{
+    padding: 0px 65px;
+    width: 54%;
+}
+.sectionTag{
+    padding: 16px 0px;
+    
+}
+.sectionSubTag{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 10px;
+}
+.thumbnail img{
+    width: 310px;
+    border: 2px solid black;
+    border-radius: 26px;
+    
+    margin-left: 30%;
+    box-shadow: 5px 10px 10px red;
+}
+
+.thumbnail1 img{
+    width: 318px;
+    border: 2px solid black;
+    border-radius: 26px;
+    margin-top: 19px;
+    margin-left: 30%;
+    box-shadow: 5px 10px 10px red;
+}
+
+.big{
+    font-size: 38px;
+}
+.small{
+    font-size: 20px;
+}
+.link{
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+}
+/* .section-left{
+    flex-direction: row-reverse;
+}  */
+.name {
+  color:chartreuse;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 1px solid orange; /* The typwriter cursor */
+  white-space: nowrap;/* Keeps the content on a single line  */
+  /*margin:  auto; /*Gives that scrolling effect as the typing happens */
+  letter-spacing:0.5px; /*Adjust as needed */
+   animation: 
+    typing 3s steps(35, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+ @keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+} 
+
+/* The typewriter cursor effect */
+ @keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(0, 255, 234); } 
+ }
+ hr{
+   margin-left: 10%;
+   width:80%;
+   border: 1px solid black;
+   border-radius: 1000%;
+ }
+ .pro{
+   text-align: center;
+   display: flex;
+   flex-direction: row;
+
+ }
+ .card {
+  background-color: #106bd3a9;
+  padding: 0.5px;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 10px 13px 12px rgb(235, 10, 10);
+
+  width: 250px;
+  
+}
+.card img {
+  width: 95%;
+  height: 150px;
+  display: block;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.card h3 {
+  text-align: center;
+  margin: 10px 5px;
+  text-decoration: underline #21ffd6;
+}
+
+.card p {
+  text-align: center;
+  width: 100%;
+}
+
+.card a {
+  text-decoration: none;
+  display: block;
+  line-height: 2;
+  width: 60%;
+  background-color: #f0f0f0;
+  text-align: center;
+  justify-content: center;
+  margin: 10px auto;
+}
+
+.card a:hover {
+  background-color: #eece1a;
+  color: #363636;
+}
+.gmail,.linkdin,.hackerrank,.github{
+  margin: 15px;
+  text-align: center;
+  
+}
+.gmail,.linkdin,.hackerrank,.github, i {
+  font-size: 30px;
+  color: #363636;
+}
+
+.gmail,.linkdin,.hackerrank,.github, a:hover i {
+ color: #eece1a;
+  transform: scale(1.3);
+  transition: all 0.4s ease-out;
+}
+
+.burger{
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  right: 5%;
+  top:15px;
+}
+.line{
+  width: 33px;
+  background-color: white;
+  height: 4px;
+  margin: 5px 3px;
+}
+
+
+.text-footer{
+  text-align: center;
+  padding: 30px 0;
+ font-family: 'Ubuntu', sans-serif; 
+ display: flex;
+ justify-content: center;
+ color: white;
+ cursor: default;
+
+
+}
